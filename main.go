@@ -12,53 +12,15 @@ var (
 )
 
 func init() {
-	//declaring structs
-	cups := itemData{
-		Category: 0,
-		Quantity: 5,
-		unitCost: 3,
-	}
-
-	fork := itemData{
-		Category: 0,
-		Quantity: 4,
-		unitCost: 3,
-	}
-
-	plates := itemData{
-		Category: 0,
-		Quantity: 4,
-		unitCost: 3,
-	}
-	bread := itemData{
-		Category: 1,
-		Quantity: 2,
-		unitCost: 2,
-	}
-	cake := itemData{
-		Category: 1,
-		Quantity: 3,
-		unitCost: 1,
-	}
-	coke := itemData{
-		Category: 2,
-		Quantity: 5,
-		unitCost: 2,
-	}
-	sprite := itemData{
-		Category: 2,
-		Quantity: 5,
-		unitCost: 2,
-	}
 
 	mapItem = map[string]itemData{ //map declaration with value - of key_value pair as -struct
-		"cups":   cups,
-		"fork":   fork,
-		"plates": plates,
-		"cake":   cake,
-		"bread":  bread,
-		"coke":   coke,
-		"sprite": sprite,
+		"cups":   {0, 5, 3},
+		"fork":   {0, 4, 3},
+		"plates": {0, 4, 3},
+		"cake":   {1, 2, 2},
+		"bread":  {1, 3, 1},
+		"coke":   {2, 5, 2},
+		"sprite": {2, 5, 2},
 	}
 
 	shopSlice = []string{"Household", "Food", "Drinks"} //slice declaration with strings of the various categories
