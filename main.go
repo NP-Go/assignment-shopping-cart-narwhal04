@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"os"
 	"strings"
 )
 
@@ -66,19 +65,6 @@ func main() {
 }
 
 //----------------------------------------------------------------------------codes for function-------------------------------------------------------------------------------------------------
-
-func contOrNoT() { //to prompt use if they want to go back instead of going back to main
-	var yesNo string
-	fmt.Println("Would you like to continue from main interface page?")
-	fmt.Println("Input Yes to continue, any other input to end program")
-	fmt.Scanln(&yesNo)
-
-	if strings.ToLower(yesNo) == "yes" {
-		main()
-	} else {
-		os.Exit(0)
-	}
-}
 
 func generateList() {
 	for x, y := range mapItem {
